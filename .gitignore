@@ -1,0 +1,24 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# Environment files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build artifacts
+/dist/
+/build/
+*.tsbuildinfo
+
+# Drizzle temporary files (optional, as migration files should be committed)
+# Only ignore if you generate them locally and don't intend to commit them yet
+# drizzle/meta/*
+
+# OS and Editor files
+.DS_Store
+.vscode
