@@ -3,11 +3,13 @@ import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-postgres';
 import { transactions } from './schema.js';
 import { eq } from 'drizzle-orm';
+import cors from 'cors';
 
 const app = express()
 const port = 5000
 
 app.use(express.json())
+app.use(cors());
 
 const db = drizzle(process.env.DATABASE_URL);
 
